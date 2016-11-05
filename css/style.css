@@ -114,7 +114,7 @@ h2 {
 	}
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
 	#credits-wrapper h2 {
 		font-size: 6vw;
 	}
