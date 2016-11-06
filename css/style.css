@@ -8,6 +8,23 @@ html, body {
   background-color: white;
 }
 
+
+h1 {
+	font-family: "Playfair Display", serif;
+	font-weight: 900;
+	font-style: italic;
+	text-align: center;
+	font-size: 70px;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+	font-weight: 900;
+	font-style: italic;
+	text-align: center;
+	font-size: 30px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -18,20 +35,15 @@ a:hover {
   text-decoration: underline;
 }
 
-audio {
-	display: none;
+.fa-hand-o-down {
+	cursor: pointer;
 }
 
-#landing-page,
-#credits-page{
-	width: 100%;
+.text-page {
 	height: 100vh;
-	margin: 0;
-	padding: 0;
 }
 
-#landing-wrapper,
-#credits-wrapper{
+.text-wrapper {
   position: relative;
 	top: 50%;
 	left: 50%;
@@ -40,43 +52,17 @@ audio {
   max-width: 700px;
 }
 
-h1 {
-	font-family: "Playfair Display", serif;
-	font-weight: 900;
-	font-style: italic;
-	font-size: 70px;
-	text-align: center;
-}
-
-h2 {
-  font-family: "Playfair Display", serif;
-	font-weight: 900;
-	font-style: italic;
-	font-size: 30px;
-	text-align: center;
-}
-
-.fa-hand-o-down {
-	cursor: pointer;
-}
-
-/* grid is 3 x 4  in portrait*/
-#grid-container {
-	position: relative;
-	width: 100%;
+/* grid is 3 x 4 in portrait*/
+.grid-container {
 	height: 100vh;
-	margin: 0;
-	padding: 0;
   display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
-	align-content: flex-start;
 }
 
 .grid-elem {
 	position: relative;
 	width: 25%;
-	height: calc(100vh/3);
+	height: calc(100vh / 3);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -100,7 +86,7 @@ h2 {
 	max-height: 50%;
 }
 
-.player > img {
+.player img {
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
@@ -110,12 +96,12 @@ h2 {
 @media (orientation: portrait) {
 	.grid-elem {
 		height: 25%;
-		width: calc(100%/3);
+		width: calc(100% / 3);
 	}
 }
 
 @media (max-width: 700px) {
-	#credits-wrapper h2 {
+	h2 {
 		font-size: 6vw;
 	}
 }
