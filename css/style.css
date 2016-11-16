@@ -80,6 +80,24 @@ a:hover {
 	cursor: pointer;
 }
 
+.grid-elem:after {
+  content: '\A'; /* nonsense val */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.grid-elem:hover:after,
+.grid-elem.active:after {
+  opacity: 1;
+}
+
 .tattoo-img {
 	width: 100%;
 	height: 100%;
